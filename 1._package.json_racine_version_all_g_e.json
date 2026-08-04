@@ -1,0 +1,19 @@
+{
+  "name": "magazine-gratuit",
+  "version": "1.0.0",
+  "description": "Version ultra-légère pour éviter l'erreur 254",
+  "main": "backend/server.js",
+  "scripts": {
+    "install-backend": "npm install",
+    "install-frontend": "cd frontend && npm install --no-audit --no-fund",
+    "build-frontend": "cd frontend && npm run build",
+    "build": "npm run install-backend && npm run install-frontend && npm run build-frontend",
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3"
+  }
+}
